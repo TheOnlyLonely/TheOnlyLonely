@@ -1,0 +1,6 @@
+pod 'AFNetworking', '~> 2.0' 
+pod 'RESideMenu', '~> 4.0.7' 
+pod 'pop', '~> 1.0'
+pod 'SDWebImage', '~> 3.5.1'
+pod 'Masonry'
+pod 'XHRealTimeBlur'

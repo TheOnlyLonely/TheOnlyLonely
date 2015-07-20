@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  TheOnlyLove
+//
+//  Created by 杨毅 on 15/4/5.
+//  Copyright (c) 2015年 yangyi. All rights reserved.
+//
+
+#ifndef TheOnlyLonely_PrefixHeader_pch
+#define TheOnlyLonely_PrefixHeader_pch
+
+#pragma mark - 全局头文件
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Utils.h"
+#import "NSString+Utils.h"
+#import "NSDate+Convenience.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <AFNetworking/AFNetworking.h>
+#import "Define.h"
+
+#import <POP/POPBasicAnimation.h>
+#import <POP/POPSpringAnimation.h>
+#import <POP/POPDecayAnimation.h>
+
+#import "UIColor+CustomColors.h"
+
+#import <Masonry/Masonry.h>
+
+#endif

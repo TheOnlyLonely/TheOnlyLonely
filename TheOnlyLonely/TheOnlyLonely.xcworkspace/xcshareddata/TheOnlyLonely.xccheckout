@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>06AE9FFC-6C95-43A5-8132-1E75658A199B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheOnlyLonely</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6EF4ED21B4C3AE660D3A2849687E2589C77C2B6C</key>
+		<string>https://github.com/TheOnlyLonely/TheOnlyLonely.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TheOnlyLonely/TheOnlyLonely.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6EF4ED21B4C3AE660D3A2849687E2589C77C2B6C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TheOnlyLonely/TheOnlyLonely.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6EF4ED21B4C3AE660D3A2849687E2589C77C2B6C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6EF4ED21B4C3AE660D3A2849687E2589C77C2B6C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>git</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Masonry (0.6.2)
+  - pop (1.0.7)
+  - RESideMenu (4.0.7)
+  - SDWebImage (3.5.4):
+    - SDWebImage/Core (= 3.5.4)
+  - SDWebImage/Core (3.5.4)
+  - XHRealTimeBlur (1.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - Masonry
+  - pop (~> 1.0)
+  - RESideMenu (~> 4.0.7)
+  - SDWebImage (~> 3.5.1)
+  - XHRealTimeBlur
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  SDWebImage: b7546bef8a1a7d7f4995b2e43f7644ac04ceb186
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
+
+COCOAPODS: 0.37.2
