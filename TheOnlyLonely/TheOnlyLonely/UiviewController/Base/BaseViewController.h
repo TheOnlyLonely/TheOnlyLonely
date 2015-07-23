@@ -22,10 +22,11 @@ UINavigationControllerDelegate
 //不是数据源的数组
 @property (nonatomic, strong) NSMutableArray *OnlyOneInfoArray;
 
+@property (nonatomic, copy) NSString * transTitle;
 
-- (instancetype)init;
 
 # pragma mark - Over Nav
+
 //返回
 - (void)transSetNavLeftButton;
 //设置导航栏背景

@@ -10,11 +10,10 @@
 
 @interface WeatherModel : BaseModel
 
-@property (nonatomic, copy) NSString *temperature;
-@property (nonatomic, copy) NSString *weather;
-@property (nonatomic, copy) NSString *weather_pic;
-@property (nonatomic, copy) NSString *wind_direction;
-@property (nonatomic, copy) NSString *wind_power;
+@property (nonatomic, copy) NSString *temp;
+@property (nonatomic, copy) NSString *temp_min;
+@property (nonatomic, copy) NSString *temp_max;
+
 
 
 @end

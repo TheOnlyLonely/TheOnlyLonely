@@ -57,6 +57,44 @@ install_resource()
       ;;
   esac
 }
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundError.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundError@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundMessage.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccess.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarning.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationButtonBackground.png"
+  install_resource "TSMessages/Pod/Assets/NotificationButtonBackground@2x.png"
+  install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundError.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundError@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundMessage.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccess.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarning.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png"
+  install_resource "TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png"
+  install_resource "TSMessages/Pod/Assets/NotificationButtonBackground.png"
+  install_resource "TSMessages/Pod/Assets/NotificationButtonBackground@2x.png"
+  install_resource "TSMessages/Pod/Assets/TSMessagesDefaultDesign.json"
+fi
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then

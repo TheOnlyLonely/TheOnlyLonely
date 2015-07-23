@@ -24,8 +24,6 @@
 
 @end
 
-
-
 @implementation BaseViewController
 
 # pragma mark - View Lifecycle
@@ -36,6 +34,7 @@
     if (self) {
         self.listArray = [[NSMutableArray alloc] init];
         self.OnlyOneInfoArray = [[NSMutableArray alloc] init];
+        
     }
     
     return self;

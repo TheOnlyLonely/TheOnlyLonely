@@ -20,28 +20,48 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - HexColors (2.2.1)
+  - Mantle (2.0.2):
+    - Mantle/extobjc (= 2.0.2)
+  - Mantle/extobjc (2.0.2)
   - Masonry (0.6.2)
   - pop (1.0.7)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
   - RESideMenu (4.0.7)
   - SDWebImage (3.5.4):
     - SDWebImage/Core (= 3.5.4)
   - SDWebImage/Core (3.5.4)
+  - TSMessages (0.9.12):
+    - HexColors (~> 2.2.0)
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - Mantle
   - Masonry
   - pop (~> 1.0)
+  - ReactiveCocoa
   - RESideMenu (~> 4.0.7)
   - SDWebImage (~> 3.5.1)
+  - TSMessages
   - XHRealTimeBlur
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  HexColors: abfd172e329dab59888614ccba6f216cec59289d
+  Mantle: 967fd31ea0220890b2e76589198996b534bb3fb1
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
   SDWebImage: b7546bef8a1a7d7f4995b2e43f7644ac04ceb186
+  TSMessages: c8cc7b80f2a833af533872cd02010cac061532cc
   XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
 
 COCOAPODS: 0.37.2

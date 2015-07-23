@@ -12,19 +12,39 @@
 #pragma mark - 全局头文件
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+#import "Define.h"
+
+//工具类
+
 #import "UIView+Utils.h"
 #import "NSString+Utils.h"
 #import "NSDate+Convenience.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-#import <AFNetworking/AFNetworking.h>
-#import "Define.h"
 
+//颜色
+#import "UIColor+CustomColors.h"
+
+//模糊
+#import "UIImageView+LBBlurredImage.h"
+
+//网络
+#import <SDWebImage/UIImageView+WebCache.h>
+
+//图片缓存处理
+#import <AFNetworking/AFNetworking.h>
+
+//POP
 #import <POP/POPBasicAnimation.h>
 #import <POP/POPSpringAnimation.h>
 #import <POP/POPDecayAnimation.h>
 
-#import "UIColor+CustomColors.h"
-
+//自定义布局
 #import <Masonry/Masonry.h>
+
+//链式
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+//发送消息
+#import <TSMessages/TSMessage.h>
 
 #endif

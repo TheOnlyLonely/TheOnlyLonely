@@ -11,10 +11,11 @@
 
 /*---------------------------------------------------*/
 
-//天气预报key
-#define WEATHERAPIKEY @"87fd1fc86bcf769415e92e938bb1cb37"
-#define appid @"3334"
-#define secret @"62dd676883ca4df680e683c028457197"
+//KEY
+#define GODMAP_KEY @"c87a0031ce8fc435c3eda104135ccd46"  //高德地图
+
+
+
 
 
 
@@ -43,7 +44,6 @@
 #define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 
-
 //pragma mark - 设备型号识别
 
 #define is_IOS_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
@@ -57,14 +57,10 @@
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-
-
 //pragma mark - 颜色
 
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 #define HEXRGBCOLOR(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-
 
 //pragma mark - 消息中心
 
@@ -72,33 +68,6 @@
 #define NotificationRemoveObserver(id) [[NSNotificationCenter defaultCenter] removeObserver:id]
 #define NotificationPostNotify(TITLE,OBJ,PARAM) [[NSNotificationCenter defaultCenter] postNotificationName:TITLE object:OBJ userInfo:PARAM]
 
-//pragma mark - 内存宏
-
-#ifndef LY_COPY
-#if __has_feature(objc_arc)
-#define LY_STRONG copy
-#else
-#define LY_STRONG copy
-#endif
-#endif
-
-#ifndef LY_STRONG
-#if __has_feature(objc_arc)
-#define LY_STRONG strong
-#else
-#define LY_STRONG retain
-#endif
-#endif
-
-#ifndef LY_WEAK
-#if __has_feature(objc_arc_weak)
-#define LY_WEAK weak
-#elif __has_feature(objc_arc)
-#define LY_WEAK unsafe_unretained
-#else
-#define LY_WEAK assign
-#endif
-#endif
 
 
 #endif

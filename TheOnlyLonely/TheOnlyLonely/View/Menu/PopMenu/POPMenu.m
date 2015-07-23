@@ -19,7 +19,6 @@ NSString*const POPMenuHidButtonNotifaction  = @"POPMenuHidButtonNotifaction";
 #define MenuButtonHorizontalMargin 10
 #define MenuButtonAnimationTime 0.2
 #define MenuButtonAnimationInterval (MenuButtonAnimationTime / 5)
-
 #define kMenuButtonBaseTag 100
 
 

@@ -20,32 +20,46 @@ static NSString * const kDefaultFontName = @"Avenir-Light";
         
        [self InitUI];
         self.backgroundColor = [UIColor clearColor];
-        
+
     }
     return self;
 }
 
 - (void)InitUI{
     
-    UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Weather_back"]];
-    imageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 200);
-    [self addSubview:imageView];
+    CGRect headerFrame = [UIScreen mainScreen].bounds;
+    CGFloat inset = 20;
+    CGFloat temperatureHeight = 110;
+    CGFloat hiloHeight = 60;
+    CGFloat iconHeight = 30;
+    CGRect hiloFrame = CGRectMake(inset, headerFrame.size.height - hiloHeight, headerFrame.size.width - 2*inset, hiloHeight);
     
-    self.weatherTemperatureLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, SCREEN_WIDTH, 65)];
-    _weatherTemperatureLabel.textColor = [UIColor blackColor];
-    _weatherTemperatureLabel.font = [UIFont fontWithName:kHelveticaNeueFontName size:35];
-    _weatherTemperatureLabel.textAlignment = NSTextAlignmentLeft;
-    _weatherTemperatureLabel.alpha = 0;
-    [imageView addSubview:self.weatherTemperatureLabel];
+    CGRect temperatureFrame = CGRectMake(inset, headerFrame.size.height - temperatureHeight - hiloHeight, headerFrame.size.width - 2*inset, temperatureHeight);
+    CGRect iconFrame = CGRectMake(inset, temperatureFrame.origin.y - iconHeight, iconHeight, iconHeight);
+    CGRect conditionsFrame = iconFrame;
     
-    self.currtentAdress = [[UILabel alloc] initWithFrame:CGRectMake(10, 200-25, SCREEN_WIDTH, 15)];
-    self.currtentAdress.textColor = [UIColor blackColor];
-    self.currtentAdress.alpha = 0;
-     self.currtentAdress.font = [UIFont fontWithName:kDefaultFontName size:15];
+    // make the conditions text a little smaller than the view
+    // and to the right of our icon
+    conditionsFrame.size.width = self.bounds.size.width - 2*inset - iconHeight - 10;
+    conditionsFrame.origin.x = iconFrame.origin.x + iconHeight + 10;
     
-    [imageView addSubview:self.currtentAdress];
+    // bottom left
+    self.temperatureLabel = [[UILabel alloc] initWithFrame:temperatureFrame];
+    _temperatureLabel.backgroundColor = [UIColor clearColor];
+    _temperatureLabel.textColor = [UIColor whiteColor];
+    _temperatureLabel.alpha = 0.0f;
+    _temperatureLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:120];
+    [self addSubview:_temperatureLabel];
+    
+    // bottom left
+    self.hiloLabel = [[UILabel alloc] initWithFrame:hiloFrame];
+    _hiloLabel.backgroundColor = [UIColor clearColor];
+    _hiloLabel.textColor = [UIColor whiteColor];
+    _hiloLabel.text = @"0° / 0°";
+    _hiloLabel.alpha = 0.0f;
+    _hiloLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:28];
+    [self addSubview:_hiloLabel];
     
 }
-
 
 @end

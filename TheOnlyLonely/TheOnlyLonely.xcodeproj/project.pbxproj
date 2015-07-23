@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		070E239D9BEC521C65DAE05C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD7665B78C8B2F5D78933F4 /* libPods.a */; };
 		BE5FA4FA1B53E5FA0009C44D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5FA4F91B53E5FA0009C44D /* AppDelegate.swift */; };
-		BE5FA4FC1B53E5FA0009C44D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5FA4FB1B53E5FA0009C44D /* ViewController.swift */; };
 		BE5FA4FF1B53E5FA0009C44D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5FA4FD1B53E5FA0009C44D /* Main.storyboard */; };
 		BE5FA5011B53E5FA0009C44D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE5FA5001B53E5FA0009C44D /* Images.xcassets */; };
 		BE5FA5041B53E5FA0009C44D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5FA5021B53E5FA0009C44D /* LaunchScreen.xib */; };
@@ -39,6 +38,13 @@
 		BEE479DA1B5BAAE300DAA10C /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479D91B5BAAE300DAA10C /* MenuButton.m */; };
 		BEE479DD1B5BB03C00DAA10C /* POPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479DC1B5BB03C00DAA10C /* POPMenu.m */; };
 		BEE479E11B5BB59400DAA10C /* PopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479E01B5BB59400DAA10C /* PopMenuViewController.m */; };
+		BEE479F71B5E86AB00DAA10C /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479F61B5E86AB00DAA10C /* TransitionViewController.m */; };
+		BEE479FA1B5E87AC00DAA10C /* PresentingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479F91B5E87AC00DAA10C /* PresentingAnimator.m */; };
+		BEE479FD1B5E892700DAA10C /* DismissingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479FC1B5E892700DAA10C /* DismissingAnimator.m */; };
+		BEE47A001B5E89DA00DAA10C /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE479FF1B5E89DA00DAA10C /* CustomViewController.m */; };
+		BEE47A041B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE47A031B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.m */; };
+		BEE47A0F1B5F8B0600DAA10C /* WeatherClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE47A0E1B5F8B0600DAA10C /* WeatherClient.m */; };
+		BEE47A131B5F904B00DAA10C /* LonelyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE47A121B5F904B00DAA10C /* LonelyManager.m */; };
 		BEE6AAFE1B555B190071FDD9 /* VBFDoubleSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE6AAFB1B555B190071FDD9 /* VBFDoubleSegment.m */; };
 		BEE6AAFF1B555B190071FDD9 /* VBFPopFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE6AAFD1B555B190071FDD9 /* VBFPopFlatButton.m */; };
 		BEE6AB081B555B480071FDD9 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE6AB051B555B480071FDD9 /* UIColor+FlatColors.m */; };
@@ -54,7 +60,6 @@
 		BEEFB8D81B58E4E200477083 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEFB8D01B58E4E200477083 /* NSString+Utils.m */; };
 		BEEFB8D91B58E4E200477083 /* UIButton+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEFB8D21B58E4E200477083 /* UIButton+Utils.m */; };
 		BEEFB8DA1B58E4E200477083 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEFB8D41B58E4E200477083 /* UIView+Utils.m */; };
-		BEEFB8DF1B5918A000477083 /* AnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEFB8DE1B59189F00477083 /* AnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +79,8 @@
 		BE5FA4F41B53E5FA0009C44D /* TheOnlyLonely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheOnlyLonely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5FA4F81B53E5FA0009C44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE5FA4F91B53E5FA0009C44D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE5FA4FB1B53E5FA0009C44D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE5FA4FE1B53E5FA0009C44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE5FA5001B53E5FA0009C44D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE5FA5001B53E5FA0009C44D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		BE5FA5031B53E5FA0009C44D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BE5FA5091B53E5FA0009C44D /* TheOnlyLonelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheOnlyLonelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5FA50E1B53E5FA0009C44D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +125,20 @@
 		BEE479DC1B5BB03C00DAA10C /* POPMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POPMenu.m; sourceTree = "<group>"; };
 		BEE479DF1B5BB59400DAA10C /* PopMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewController.h; sourceTree = "<group>"; };
 		BEE479E01B5BB59400DAA10C /* PopMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewController.m; sourceTree = "<group>"; };
+		BEE479F51B5E86AB00DAA10C /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		BEE479F61B5E86AB00DAA10C /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		BEE479F81B5E87AC00DAA10C /* PresentingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingAnimator.h; sourceTree = "<group>"; };
+		BEE479F91B5E87AC00DAA10C /* PresentingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingAnimator.m; sourceTree = "<group>"; };
+		BEE479FB1B5E892700DAA10C /* DismissingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissingAnimator.h; sourceTree = "<group>"; };
+		BEE479FC1B5E892700DAA10C /* DismissingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissingAnimator.m; sourceTree = "<group>"; };
+		BEE479FE1B5E89DA00DAA10C /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		BEE479FF1B5E89DA00DAA10C /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		BEE47A021B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		BEE47A031B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		BEE47A0D1B5F8B0600DAA10C /* WeatherClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherClient.h; sourceTree = "<group>"; };
+		BEE47A0E1B5F8B0600DAA10C /* WeatherClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherClient.m; sourceTree = "<group>"; };
+		BEE47A111B5F904B00DAA10C /* LonelyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LonelyManager.h; sourceTree = "<group>"; };
+		BEE47A121B5F904B00DAA10C /* LonelyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LonelyManager.m; sourceTree = "<group>"; };
 		BEE6AAFA1B555B190071FDD9 /* VBFDoubleSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFDoubleSegment.h; sourceTree = "<group>"; };
 		BEE6AAFB1B555B190071FDD9 /* VBFDoubleSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBFDoubleSegment.m; sourceTree = "<group>"; };
 		BEE6AAFC1B555B190071FDD9 /* VBFPopFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBFPopFlatButton.h; sourceTree = "<group>"; };
@@ -151,8 +169,6 @@
 		BEEFB8D21B58E4E200477083 /* UIButton+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Utils.m"; sourceTree = "<group>"; };
 		BEEFB8D31B58E4E200477083 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		BEEFB8D41B58E4E200477083 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
-		BEEFB8DD1B59189F00477083 /* AnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationViewController.h; sourceTree = "<group>"; };
-		BEEFB8DE1B59189F00477083 /* AnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +250,8 @@
 		BE5FA4F61B53E5FA0009C44D /* TheOnlyLonely */ = {
 			isa = PBXGroup;
 			children = (
+				BEE47A101B5F903200DAA10C /* Manager */,
+				BEE47A0B1B5F8A1800DAA10C /* Client */,
 				BEE98F2D1B5A515A00C48423 /* OnlyCode */,
 				BEB44EBE1B54F7C800BCB70B /* Util */,
 				BE5FA54B1B54069D0009C44D /* Config */,
@@ -241,11 +259,8 @@
 				BE5FA5481B5406810009C44D /* Model */,
 				BE5FA5491B54068A0009C44D /* View */,
 				BE5FA54A1B5406910009C44D /* UiviewController */,
+				BEE47A151B6090AF00DAA10C /* Resource */,
 				BE5FA4F91B53E5FA0009C44D /* AppDelegate.swift */,
-				BE5FA4FB1B53E5FA0009C44D /* ViewController.swift */,
-				BE5FA4FD1B53E5FA0009C44D /* Main.storyboard */,
-				BE5FA5001B53E5FA0009C44D /* Images.xcassets */,
-				BE5FA5021B53E5FA0009C44D /* LaunchScreen.xib */,
 				BE5FA4F71B53E5FA0009C44D /* Supporting Files */,
 			);
 			path = TheOnlyLonely;
@@ -394,6 +409,7 @@
 		BEB44EBE1B54F7C800BCB70B /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				BEE47A011B5F6E7100DAA10C /* UIImageViewUtils */,
 				BEEFB8C81B58E4E200477083 /* CocoaUtils */,
 				BE7AF5F61B56A1CE008AF8F6 /* NSDateUtils */,
 				BEE6AB001B555B480071FDD9 /* UIColor+FlatColors */,
@@ -442,6 +458,66 @@
 				BEE479E01B5BB59400DAA10C /* PopMenuViewController.m */,
 			);
 			path = POPMenu;
+			sourceTree = "<group>";
+		};
+		BEE479F41B5E868400DAA10C /* ModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				BEE479F51B5E86AB00DAA10C /* TransitionViewController.h */,
+				BEE479F61B5E86AB00DAA10C /* TransitionViewController.m */,
+				BEE479FE1B5E89DA00DAA10C /* CustomViewController.h */,
+				BEE479FF1B5E89DA00DAA10C /* CustomViewController.m */,
+				BEE479F81B5E87AC00DAA10C /* PresentingAnimator.h */,
+				BEE479F91B5E87AC00DAA10C /* PresentingAnimator.m */,
+				BEE479FB1B5E892700DAA10C /* DismissingAnimator.h */,
+				BEE479FC1B5E892700DAA10C /* DismissingAnimator.m */,
+			);
+			path = ModalTransition;
+			sourceTree = "<group>";
+		};
+		BEE47A011B5F6E7100DAA10C /* UIImageViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BEE47A021B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.h */,
+				BEE47A031B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.m */,
+			);
+			path = UIImageViewUtils;
+			sourceTree = "<group>";
+		};
+		BEE47A0B1B5F8A1800DAA10C /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				BEE47A0C1B5F8A4E00DAA10C /* WeatherClient */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		BEE47A0C1B5F8A4E00DAA10C /* WeatherClient */ = {
+			isa = PBXGroup;
+			children = (
+				BEE47A0D1B5F8B0600DAA10C /* WeatherClient.h */,
+				BEE47A0E1B5F8B0600DAA10C /* WeatherClient.m */,
+			);
+			path = WeatherClient;
+			sourceTree = "<group>";
+		};
+		BEE47A101B5F903200DAA10C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BEE47A111B5F904B00DAA10C /* LonelyManager.h */,
+				BEE47A121B5F904B00DAA10C /* LonelyManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BEE47A151B6090AF00DAA10C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE5FA4FD1B53E5FA0009C44D /* Main.storyboard */,
+				BE5FA5001B53E5FA0009C44D /* Images.xcassets */,
+				BE5FA5021B53E5FA0009C44D /* LaunchScreen.xib */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		BEE6AAE01B555AA40071FDD9 /* Button */ = {
@@ -547,8 +623,6 @@
 			isa = PBXGroup;
 			children = (
 				BEEFB8E11B594AC900477083 /* POP */,
-				BEEFB8DD1B59189F00477083 /* AnimationViewController.h */,
-				BEEFB8DE1B59189F00477083 /* AnimationViewController.m */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -556,6 +630,7 @@
 		BEEFB8E11B594AC900477083 /* POP */ = {
 			isa = PBXGroup;
 			children = (
+				BEE479F41B5E868400DAA10C /* ModalTransition */,
 				BEE479DE1B5BB57400DAA10C /* POPMenu */,
 				BEE98F291B5A4F4E00C48423 /* ShakeButton */,
 				BEE98F261B5A44CE00C48423 /* POPViewController.h */,
@@ -701,21 +776,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE5FA4FC1B53E5FA0009C44D /* ViewController.swift in Sources */,
 				BE5FA5661B540EAB0009C44D /* BaseViewController.m in Sources */,
 				BEEFB8D71B58E4E200477083 /* NSMutableDictionary+Utils.m in Sources */,
+				BEE47A131B5F904B00DAA10C /* LonelyManager.m in Sources */,
 				BEEFB8D81B58E4E200477083 /* NSString+Utils.m in Sources */,
 				BEE479DA1B5BAAE300DAA10C /* MenuButton.m in Sources */,
 				BE5FA4FA1B53E5FA0009C44D /* AppDelegate.swift in Sources */,
 				BEE98F311B5A518F00C48423 /* UIColor+CustomColors.m in Sources */,
 				BE7AF5F11B569918008AF8F6 /* BaseModel.m in Sources */,
+				BEE479FA1B5E87AC00DAA10C /* PresentingAnimator.m in Sources */,
 				BEE479D41B5BA99F00DAA10C /* MenuItem.m in Sources */,
-				BEEFB8DF1B5918A000477083 /* AnimationViewController.m in Sources */,
 				BE7AF5EA1B564A51008AF8F6 /* WeatherView.m in Sources */,
 				BEE479DD1B5BB03C00DAA10C /* POPMenu.m in Sources */,
+				BEE47A0F1B5F8B0600DAA10C /* WeatherClient.m in Sources */,
+				BEE47A001B5E89DA00DAA10C /* CustomViewController.m in Sources */,
+				BEE47A041B5F6E8D00DAA10C /* UIImageView+LBBlurredImage.m in Sources */,
 				BE7AF5F91B56A1F0008AF8F6 /* NSDate+Convenience.m in Sources */,
 				BEB44EC41B5509D200BCB70B /* MainViewController.m in Sources */,
 				BEE98F251B5A43DE00C48423 /* ShakeButton.m in Sources */,
+				BEE479FD1B5E892700DAA10C /* DismissingAnimator.m in Sources */,
 				BEE98F341B5A87CF00C48423 /* BaseTableViewCell.m in Sources */,
 				BE7AF5F51B569976008AF8F6 /* WeatherModel.m in Sources */,
 				BEE6AAFF1B555B190071FDD9 /* VBFPopFlatButton.m in Sources */,
@@ -728,6 +807,7 @@
 				BEEFB8DA1B58E4E200477083 /* UIView+Utils.m in Sources */,
 				BEE98F371B5A88E000C48423 /* MainCell.m in Sources */,
 				BEEFB8D91B58E4E200477083 /* UIButton+Utils.m in Sources */,
+				BEE479F71B5E86AB00DAA10C /* TransitionViewController.m in Sources */,
 				BEEFB8D51B58E4E200477083 /* NSArray+Utils.m in Sources */,
 				BEE98F281B5A44CE00C48423 /* POPViewController.m in Sources */,
 				BEE6AAFE1B555B190071FDD9 /* VBFDoubleSegment.m in Sources */,
@@ -759,6 +839,7 @@
 				BE5FA4FE1B53E5FA0009C44D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BE5FA5021B53E5FA0009C44D /* LaunchScreen.xib */ = {
@@ -767,6 +848,7 @@
 				BE5FA5031B53E5FA0009C44D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -808,7 +890,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -847,7 +929,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

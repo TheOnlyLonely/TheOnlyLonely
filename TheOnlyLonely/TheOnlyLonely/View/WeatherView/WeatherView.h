@@ -11,7 +11,8 @@
 @interface WeatherView : UIView
 
 @property (nonatomic, strong) UIImageView *weatherEventPicture;  //天气图片
-@property (nonatomic, strong) UILabel *weatherTemperatureLabel;  //天气温度
+@property (nonatomic, strong) UILabel *temperatureLabel;  //天气温度
+@property (nonatomic, strong) UILabel *hiloLabel;
 @property (nonatomic, strong) UILabel *currtentAdress; //地址
 
 

@@ -9,6 +9,8 @@
 #import "POPViewController.h"
 #import "ShakeViewController.h"
 #import "PopMenuViewController.h"
+#import "CustomViewController.h"
+
 
 @interface POPViewController ()
 
@@ -20,7 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.listArray = [@[@"ShakeButton", @"POPMenu"]mutableCopy];
+    self.title = self.transTitle;
+    self.listArray = [@[@"ShakeButton", @"POPMenu", @"ModalTransition"]mutableCopy];
     
     [self.view addSubview:self.tableView];
     
@@ -29,7 +32,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-     self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets = (UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
 }
 
 # pragma mark - UITableViewDataSource
@@ -66,11 +72,14 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row == 0) {
-    ShakeViewController * shake = [[ShakeViewController alloc] init];
+        ShakeViewController * shake = [[ShakeViewController alloc] init];
     [self.navigationController pushViewController:shake animated:YES];
     }else if (indexPath.row == 1){
         PopMenuViewController *menu = [[PopMenuViewController alloc] init];
         [self.navigationController pushViewController:menu animated:YES];
+    }else if (indexPath.row == 2){
+        CustomViewController * customViewController = [[CustomViewController alloc] init];
+        [self.navigationController pushViewController:customViewController animated:YES];
     }
     
 }

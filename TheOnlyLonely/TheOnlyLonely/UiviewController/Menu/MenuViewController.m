@@ -27,7 +27,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    
     CGRect rect = self.view.bounds;
     rect.origin.y = 130;
     self.tableView.frame = rect;
